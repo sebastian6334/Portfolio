@@ -1,0 +1,95 @@
+.project-container{
+    position: relative;
+    min-height: 100vh;
+    max-height: 100%;
+
+
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px; /* Increased max-width */
+    margin: 1.5rem; /* Increased margin for spacing */
+    border-radius: 0.5rem;
+    padding: 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  
+    .project-card-image {
+    //   flex-shrink: 0;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 768px) {
+        width: 60%; /* Adjust as needed */
+        height: auto;
+      }
+  
+      img {
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;       object-fit: contain; /* Ensure the image fits well */
+        border-radius: 0.5rem;
+      }
+    }
+    .project-card-image:hover {
+        border-radius: 0.5rem;
+        transform:scale(1.1);
+        background-color: #292928;
+      }
+  
+    .project-card-content {
+      padding: 1.5rem; /* Increased padding */
+      flex-grow: 1;
+  
+      @media (min-width: 768px) {
+        padding: 2rem; /* Increased padding for larger screens */
+      }
+  
+      .project-card-title {
+        font-size: 1.5rem; /* Increased font-size */
+        color: #ff6600;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 1rem; /* Increased margin-bottom */
+        text-align: center;
+
+      }
+  
+      .project-card-description {
+        font-size: 1.125rem; /* Increased font-size */
+        color: rgb(202, 201, 201);
+        margin-bottom: 1.5rem; /* Increased margin-bottom */
+      }
+  
+      .project-card-icons {
+        display: flex;
+        align-items: center;
+  
+        .icon-link {
+          margin: 1rem; 
+          transition: color 0.3s;
+        //   position: absolute;
+        //   bottom: 0px;
+        //   right: 0;
+            img{
+                
+                border-radius: 100px;
+                width: 50px;
+                box-shadow: 4px 5px 12px hsl(0, 0%, 15%);
+            } 
+         
+        }
+      }
+    }
+  }
+}
+

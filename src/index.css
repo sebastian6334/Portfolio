@@ -1,0 +1,32 @@
+@font-face {
+  font-family: rubik;
+  src: url(./../public/rubik/Rubik-Regular.ttf);
+}
+
+html,
+body,
+#root {
+  font-family: rubik;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(102, 102, 102);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff6600;
+  border-radius: 1rem;
+}

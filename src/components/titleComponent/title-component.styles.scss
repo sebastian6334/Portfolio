@@ -1,0 +1,38 @@
+.title-component-overlay {
+  z-index: 101;
+  position: sticky;
+  position: -webkit-sticky; 
+  background: rgba(18, 18, 18, 0.8); 
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  display: inline-block;
+  top: 0; 
+  width: 100%;
+}
+
+.title-component-text {
+  z-index: 100;
+  font-weight: bold;
+  margin: 1rem;
+  font-size: 3rem;
+  background: linear-gradient(45deg, #f3ec78, #af4261, #f3ec78, #af4261);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  animation: glitter 10s linear infinite;
+}
+
+@keyframes glitter {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+

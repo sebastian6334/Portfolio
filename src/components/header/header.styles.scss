@@ -1,0 +1,149 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: -100px; 
+  left: 0;
+  right: 0;
+  color: white;
+  z-index: 1000;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: transparent;
+  animation: slideDown 1s forwards; 
+}
+
+@keyframes slideDown {
+  from {
+      top: -100px; 
+      opacity: 0;
+  }
+  to {
+      top: 0; 
+      opacity: 1;
+  }
+}
+
+.sticky {
+  background-color: rgba(18, 18, 18, 1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff6600;
+}
+
+.nav-list {
+  position: relative;
+  display: flex;
+  opacity: 0;
+  animation: fadeInItems 1s forwards; 
+  animation-delay: 1s; 
+}
+
+@keyframes fadeInItems {
+  from {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInItems-X {
+  from {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(-2rem);
+  }
+}
+
+@keyframes fadeInItemsEmoji{
+  0% {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(-0.5rem);
+  }
+}
+
+@keyframes fadeInItemsY {
+  from {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+  margin-left: 1rem;
+  text-wrap: nowrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}
+
+.active {
+  color: #ff6600;
+  padding-bottom: 0.5rem;
+  border-bottom: 5px ridge #ff6600;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 500px) {
+  .header {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: center;
+  }
+  .nav-list {
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+  }
+  .nav-item {
+      margin: 1rem;
+      font-size: 0.9rem;
+  }
+  .nav-link {
+      text-align: center;
+  }
+  .logo {
+      font-size: 1rem;
+      margin: 0.5rem;
+  }
+}
