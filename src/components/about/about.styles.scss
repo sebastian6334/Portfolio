@@ -216,13 +216,27 @@ body {
 
 .social-link:hover {
   background-color: #ff6600;
-  transform: translateX(-0.5rem);
+  transform: translateX(0);
   box-shadow: rgb(77, 57, 38) 0px 20px 30px -10px;
+}
+
+.social-links {
+  position: absolute;
+  left: -0.8rem; 
+  transition: left 0.3s ease-in-out;
+}
+
+.social-links:hover {
+  left: 1rem; 
 }
 
 .emoji-container {
   background: linear-gradient(#1d1d1c9d, #27272636);
-  width: 70px;
+  position: relative;
+  text-align: right;
+  padding-right: 1rem;
+  left: -1rem;
+  width: 90px;
   height: 60px;
   background-color: white;
   border-top-right-radius: 0.5rem;
@@ -234,7 +248,7 @@ body {
 }
 
 .emoji {
-  font-size: 2rem;
+  font-size: 2rem; 
   animation: wave 2s infinite;
   display: inline-block;
   transform-origin: 70% 70%;

@@ -7,6 +7,7 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [currentSection, setCurrentSection] = useState("");
   const { t } = useTranslation();
+  const sectionsWIP = ["home", "projects"];
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -17,6 +18,7 @@ const Header = () => {
   };
   const handleScrollSelected = () => {
     const sections = ["skills", "home", "projects", "contact"];
+
     let foundId = "";
 
     sections.forEach((id) => {
@@ -57,11 +59,19 @@ const Header = () => {
           {headerData.map((item, index) => (
             <li key={index} className="nav-item">
               <a
-                href={item.url}
+                href={sectionsWIP.includes(item.url) ? "#" : item.url}
                 className={`nav-link ${
                   currentSection === item.id ? "active" : ""
+                } ${
+                  sectionsWIP.includes(item.name) ? "nav-link-disabled" : ""
                 }`}
-                onClick={() => setCurrentSection(item.id)}
+                onClick={(event) => {
+                  if (sectionsWIP.includes(item.name)) {
+                    event.preventDefault();
+                    return;
+                  }
+                  setCurrentSection(item.id);
+                }}
               >
                 {t(item.name)}
               </a>
