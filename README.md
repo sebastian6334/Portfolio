@@ -1,43 +1,42 @@
 # Portfolio - React + Vite + TypeScript
 
-## 📌 Opis
-To jest moje portfolio, stworzone przy użyciu **React**, **Vite**, **SCSS** i **TypeScript**. Projekt ma na celu zaprezentowanie moich umiejętności, doświadczenia i projektów.
+## 📌 Description
+This is my portfolio, created using **React**, **Vite**, **SCSS**, and **TypeScript**. The project aims to showcase my skills, experience, and projects.
 
-## 🛠️ Technologie
+## 🛠️ Technologies
 - ⚛️ React
 - ⚡ Vite
 - 🟦 TypeScript
 - 💅 SCSS
 
+## 📦 Installation and Running
 
-## 📦 Instalacja i uruchomienie
+To run the project locally, follow these steps:
 
-Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
-
-1. **Sklonuj repozytorium**:
+1. **Clone the repository**:
    ```sh
-   git clone https://github.com/twoj-nick/twoje-portfolio.git
-   cd twoje-portfolio
+   git clone https://github.com/sebastian6334/Portfolio.git
+   cd Portfolio
    ```
 
-2. **Zainstaluj zależności**:
+2. **Install dependencies**:
    ```sh
    npm install
    ```
 
-3. **Uruchom aplikację lokalnie**:
+3. **Run the application locally**:
    ```sh
    npm run dev
    ```
 
-4. **Otwórz w przeglądarce**:
-   Aplikacja powinna działać pod adresem: [http://localhost:5173](http://localhost:5173)
+4. **Open in browser**:
+   The application should be available at: [http://localhost:5173](http://localhost:5173)
 
-## 📄 Licencja
-Ten projekt jest dostępny **tylko do wglądu** i nie może być kopiowany, używany ani modyfikowany bez zgody autora.
+## 📄 License
+This project is available **for viewing only** and cannot be copied, used, or modified without the author's permission.
 
-## 📞 Kontakt
-Jeśli masz pytania, skontaktuj się ze mną przez:
-- 📧 Email: [twoj-email@example.com](mailto:twoj-email@example.com)
-- 🔗 LinkedIn: [https://www.linkedin.com/in/twojprofil](https://www.linkedin.com/in/twojprofil)
-- 🌎 Portfolio: [https://twojeportfolio.com](https://twojeportfolio.com)
+## 📞 Contact
+If you have any questions, feel free to contact me via:
+- 📧 Email: [your-email@example.com](mailto:your-email@example.com)
+- 🔗 LinkedIn: [https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/yourprofile)
+- 🌎 Portfolio: [https://yourportfolio.com](https://yourportfolio.com)
