@@ -1,5 +1,10 @@
 # Portfolio - React + Vite + TypeScript
 
+## Preview
+
+![image](https://github.com/user-attachments/assets/0bf90a76-dce0-4139-99d5-37bff2037c03)
+
+
 ## 📌 Description
 This is my portfolio, created using **React**, **Vite**, **SCSS**, and **TypeScript**. The project aims to showcase my skills, experience, and projects.
 
